@@ -1,0 +1,73 @@
+html {
+  padding: none;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17332d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  z-index: 1;
+}
+
+#logo {
+  width: 12%;
+  padding-bottom: 5%;
+}
+
+#title {
+  width: 100%;
+  padding-bottom: 5%;
+  color: #dbdac9;
+}
+
+#button {
+  width: 12%;
+}
+
+#planes {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#planes {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.plane {
+  position: absolute;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  transform-origin: center center;
+  transform: translate(-50%, -50%); /* Center the plane */
+  transition: transform 0.25s linear, opacity 0.5s ease-in-out; /* Smoother rotation and quick opacity transition */
+  opacity: 0; /* Start with 0 opacity */
+}
+
+.dash {
+  position: absolute;
+  width: 15px; /* Width of the dash */
+  height: 5px; /* Height of the dash */
+  background-color: #75876f;
+  border-radius: 2.5px; /* Rounded ends */
+  transform-origin: center center;
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; /* Smoother rotation and opacity transition */
+}
